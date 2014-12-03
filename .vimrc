@@ -43,18 +43,18 @@ NeoBundle 'thinca/vim-quickrun'
 "カラースキーマの取得
 NeoBundle 'tomasr/molokai'
 NeoBundle 'nanotech/jellybeans.vim'
-
+NeoBundle 'w0ng/vim-hybrid'
+NeoBundle 'jonathanfilip/vim-lucius'
+NeoBundle 'vim-scripts/Wombat'
+NeoBundle 'vim-scripts/rdark'
 
 "インデントにガイドを入れる
 NeoBundle 'nathanaelkane/vim-indent-guides'
 
 call neobundle#end()
 
-filetype plugin indent on
-
-NeoBundleCheck
-
 "デフォルトカラースキーマ設定
+set t_Co=256
 colorscheme molokai
 syntax on
 let g:molokai_original = 1
@@ -63,21 +63,22 @@ set background=dark
 
 
 " vimを立ち上げた時に、自動的にvim-indent-guidesをオンにする
-"let g:indent_guides_enable_on_vim_startup=1
+let g:indent_guides_enable_on_vim_startup=1
 " ガイドをスタートするインデントの量
-"let g:indent_guides_start_level=2
+let g:indent_guides_start_level=2
 " 自動カラーを無効にする
-"let g:indent_guides_auto_colors=1
+let g:indent_guides_auto_colors=1
 " 奇数インデントのカラー
-"autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=#262626 ctermbg=gray
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=#262626 ctermbg=gray
 " 偶数インデントのカラー
-"autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#3c3c3c ctermbg=darkgray
+autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#3c3c3c ctermbg=darkgray
 " ハイライト色の変化の幅
-"let g:indent_guides_color_change_percent = 30
+let g:indent_guides_color_change_percent = 30
 " ガイドの幅
-"let g:indent_guides_guide_size = 1
+let g:indent_guides_guide_size = 1
 
 
 
 filetype plugin indent on
 
+NeoBundleCheck
