@@ -40,7 +40,16 @@ NeoBundle 'ujihisa/unite-colorscheme'
 NeoBundle 'Shougo/neosnippet.vim'
 NeoBundle 'thinca/vim-quickrun'
 
-"カラースキーマの取得
+" Python補完プラグイン
+NeoBundle 'davidhalter/jedi-vim'
+
+" Python構文エラー検出プラグイン
+NeoBundle 'kevinw/pyflakes-vim'
+
+" pep8の規約違反確認
+NeoBundle 'nvie/vim-flake8'
+
+" カラースキーマ
 NeoBundle 'tomasr/molokai'
 NeoBundle 'nanotech/jellybeans.vim'
 NeoBundle 'w0ng/vim-hybrid'
@@ -48,12 +57,12 @@ NeoBundle 'jonathanfilip/vim-lucius'
 NeoBundle 'vim-scripts/Wombat'
 NeoBundle 'vim-scripts/rdark'
 
-"インデントにガイドを入れる
+" インデントにガイドを入れる
 NeoBundle 'nathanaelkane/vim-indent-guides'
 
 call neobundle#end()
 
-"デフォルトカラースキーマ設定
+" デフォルトカラースキーマ設定
 set t_Co=256
 colorscheme molokai
 syntax on
